@@ -73,3 +73,10 @@ West African roots and the specific peoples and movements that fed into them).
 - Gather **as much real data as possible**, and let culture fill in what numbers cannot.
 - Keep the orienting question always in view: **who are the people of today, where did
   they come from, and where are they going?**
+
+### Project documents
+
+- **[ROADMAP.md](ROADMAP.md)** — the phased plan, organized as stacking data layers
+  (macro census → modern genetics → history → deep-time genetics → synthesis).
+- **[DATA_SOURCES.md](DATA_SOURCES.md)** — tiered catalog of data sources matching the
+  roadmap phases, with licensing and citation conventions.
