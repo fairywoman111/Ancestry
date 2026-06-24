@@ -80,3 +80,13 @@ West African roots and the specific peoples and movements that fed into them).
   (macro census → modern genetics → history → deep-time genetics → synthesis).
 - **[DATA_SOURCES.md](DATA_SOURCES.md)** — tiered catalog of data sources matching the
   roadmap phases, with licensing and citation conventions.
+- **[docs/macro_groups.md](docs/macro_groups.md)** — America's macro groupings, mirroring
+  US federal (OMB / Census) categories; the skeleton later layers line up against.
+- **[CITATIONS.md](CITATIONS.md)** — provenance log; every dataset gets an entry.
+
+### Repository layout
+
+- `data/` — datasets by tier (`tier1_census` … `tier4_ancient`); see `data/README.md`.
+  Raw/large files are gitignored — commit derived extracts and the code that makes them.
+- `notebooks/` — analysis notebooks (`01_macro_census_baseline.ipynb` starts Phase 1).
+- `docs/` — definitions and reference notes.

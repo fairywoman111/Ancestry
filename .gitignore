@@ -1,0 +1,28 @@
+# Raw / large datasets — keep out of git; commit derived extracts + the code that makes them.
+data/**/raw/
+*.csv.gz
+*.vcf
+*.vcf.gz
+*.bcf
+*.bam
+*.bed
+*.bim
+*.fam
+*.zip
+*.parquet
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets (e.g. Census API key)
+.env
