@@ -28,6 +28,8 @@ Build the big-picture demographic map of America — the skeleton everything els
 
 - Race / ethnicity / ancestry, geography, language, religion, income, over time.
 - All free and well-structured (see Tier 1 in `DATA_SOURCES.md`).
+- **Start at state level** as the baseline skeleton; metro is the natural second cut. See
+  the geographic resolution strategy in `docs/granularity.md`.
 - Deliverable: a clean macro picture of who lives where, and how that has shifted.
 
 ## Phase 2 — Modern genetic layer

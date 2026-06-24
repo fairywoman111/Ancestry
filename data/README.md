@@ -12,8 +12,14 @@ and the source catalog in [`../DATA_SOURCES.md`](../DATA_SOURCES.md).
 
 ## Conventions
 
-- **Do not commit large raw datasets.** Keep raw downloads out of git (see `.gitignore`);
-  commit small, derived/processed extracts and the scripts/notebooks that produce them.
+- **Everything lives in the repo.** Census tables, historical extracts, and *derived*
+  genetic tables (allele frequencies, admixture proportions, haplogroup counts) are all
+  small — commit them normally, alongside the scripts/notebooks that produce them. The repo
+  is meant to be self-contained and reproducible from a clone.
+- **The one exception: raw genomic dumps.** Full VCFs / BAMs / ancient-DNA source files are
+  gigabytes+ and exceed GitHub's 100MB-per-file limit, so they are gitignored. Instead of
+  the file, commit a **citation + download pointer** in [`../CITATIONS.md`](../CITATIONS.md)
+  and the code that turns the raw source into the small derived table we keep.
 - **Every dataset gets a citation entry** in [`../CITATIONS.md`](../CITATIONS.md) — source,
   access date, version, and license.
 - **Mark interpretation.** Derived or inferred figures are labeled as such, never presented

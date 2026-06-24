@@ -82,6 +82,8 @@ West African roots and the specific peoples and movements that fed into them).
   roadmap phases, with licensing and citation conventions.
 - **[docs/macro_groups.md](docs/macro_groups.md)** — America's macro groupings, mirroring
   US federal (OMB / Census) categories; the skeleton later layers line up against.
+- **[docs/granularity.md](docs/granularity.md)** — geographic resolution strategy
+  (state → metro → county-on-demand: drill down only where it naturally breaks apart).
 - **[CITATIONS.md](CITATIONS.md)** — provenance log; every dataset gets an entry.
 
 ### Repository layout

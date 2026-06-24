@@ -1,15 +1,23 @@
-# Raw / large datasets — keep out of git; commit derived extracts + the code that makes them.
-data/**/raw/
-*.csv.gz
+# Almost everything in this project lives in the repo — census tables, historical
+# extracts, and DERIVED genetic tables (allele freqs, admixture, haplogroup counts)
+# are all small and committed normally.
+#
+# The ONLY things kept out are raw genomic dumps that GitHub physically can't hold
+# (100MB/file limit), and secrets. For raw genomes we commit a citation + download
+# pointer in CITATIONS.md instead of the file itself.
+
+# Raw, oversized bioinformatics formats (keep a citation pointer instead)
 *.vcf
 *.vcf.gz
 *.bcf
 *.bam
-*.bed
-*.bim
-*.fam
-*.zip
-*.parquet
+*.cram
+*.fastq
+*.fastq.gz
+data/**/raw/
+
+# Secrets (e.g. Census API key)
+.env
 
 # Python
 __pycache__/
@@ -23,6 +31,3 @@ env/
 .DS_Store
 .idea/
 .vscode/
-
-# Secrets (e.g. Census API key)
-.env
