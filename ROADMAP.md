@@ -31,6 +31,11 @@ Build the big-picture demographic map of America — the skeleton everything els
 - **Start at state level** as the baseline skeleton; metro is the natural second cut. See
   the geographic resolution strategy in `docs/granularity.md`.
 - Deliverable: a clean macro picture of who lives where, and how that has shifted.
+- **Status:** code ready — `scripts/fetch_census_baseline.py` and
+  `notebooks/01_macro_census_baseline.ipynb` pull ACS B03002 at state level. Run where
+  outbound network to `api.census.gov` is allowed (`pip install -r requirements.txt`,
+  then `python scripts/fetch_census_baseline.py`); it was not runnable from the sandboxed
+  authoring environment.
 
 ## Phase 2 — Modern genetic layer
 
